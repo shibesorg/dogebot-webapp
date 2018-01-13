@@ -156,3 +156,4 @@ pip-selfcheck.json
 
 
 .envrc
+*.sqlite
