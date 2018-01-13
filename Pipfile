@@ -1,0 +1,22 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+
+[packages]
+
+bottle = "*"
+pylint = "*"
+beaker = "*"
+dataset = "*"
+passlib = "*"
+hashids = "*"
+bcrypt = "*"
+pycrypto = "*"
+wtforms = "*"
+bottle-utils = "*"
+itsdangerous = "*"
+requests = "*"
+tweepy = "*"
+dogecoin-python = "*"

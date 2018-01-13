@@ -1,0 +1,36 @@
+% rebase('./layout.html')
+
+% if defined('message'):
+<div class="flash">
+  {{ message }}
+</div>
+% end
+
+<div>
+    <h1>Hello World</h1>
+    % if defined('screen_name'):
+      <p>Balance: {{ balance}}</p>
+      <p>Username: {{ screen_name }}</p>
+      <p>Dogecoin Address: <code style="display: inline;">{{ address }}</code></p>
+
+      <h2>Send Doges</h2>
+
+      <form action="/send" method="post">
+        <fieldset >
+          <label for="amount">Amount</label>
+          <input type="number" name="amount" placeholder="e.g. 5000">
+        </fieldset>
+
+        <fieldset>
+          <label for="address">Address</label>
+          <input type="text" name="address" placeholder="e.g. nZBoUCAmPdu6h5JpY7jgn4LBxMQhxhnsRy">
+        </fieldset>
+
+        <fieldset>
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+    % else: 
+    <p><a href="{{ twitter_redirect_url }}">Login with Twitter</a></p>
+    % end
+</div>
