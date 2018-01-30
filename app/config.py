@@ -17,7 +17,7 @@ PORT = os.getenv('PORT', 4000)
 DEBUG = os.getenv('DEBUG', True)
 RELOADER = os.getenv('RELOADER', True)
 
-DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///database.sqlite')
+DATABASE_URI = os.getenv('DATABASE_URI', 'sqlite:///database.sqlite')
 
 SALT = os.getenv('SALT', 'some salt')
 SECRET_KEY = os.getenv('SECRET_KEY', 'secret key')

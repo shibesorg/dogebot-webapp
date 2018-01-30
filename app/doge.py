@@ -39,3 +39,6 @@ class DogeConnection():
             comment=comment,
             comment_to=comment,
         )
+
+    def list_transactions(self, account_name):
+        return self.conn.listtransactions(account_name, count=10)

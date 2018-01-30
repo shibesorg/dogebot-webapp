@@ -1,6 +1,6 @@
 import dataset 
-from config import DATABASE_URL
+from config import DATABASE_URI
 
 # Database setup
-database = dataset.connect(DATABASE_URL)
+database = dataset.connect(DATABASE_URI)
 users = database['users']
